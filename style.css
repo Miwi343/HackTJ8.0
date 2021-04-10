@@ -1,0 +1,404 @@
+*,html,body
+{
+    margin:0;
+    padding:0;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    height: 3000px;
+    font-family: sans-serif;
+}
+
+header
+{
+    height:120px;
+    line-height: 100px;
+    position: fixed;
+    z-index: 1; 
+    width: 100%;
+}
+
+p
+{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.title
+{
+    text-align: center;
+}
+.secondary
+{
+    background-color: deepskyblue;
+    box-shadow: 0px 0px 75px 0px;
+    transition: all 0.4s ease-in-out;
+}
+
+ul
+{
+    list-style: none;
+    
+}
+ul li
+{
+   display: inline-block;
+}
+header nav
+{
+    float: right;
+}
+ 
+
+
+
+
+
+.logo img
+{
+    float:left;
+    padding-left: 30px;
+}
+header nav ul li a 
+{
+    padding-right: 30px;
+    font-weight: bold;
+    color: white;
+    transition: all 0.8s ease-in;
+}
+header nav ul li a:hover
+{
+    text-decoration: none;
+    color: red;
+    font-size: 120%;
+}
+
+.img1
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(..//Image/background.jpg);
+    background-size: 100% 100%;
+}
+
+
+
+.slider,.slider ul,.slider ul li
+{
+    height: 710px;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.slider h2
+{
+    font-weight: bold;
+    margin-top: 270px;
+}
+.slider span
+{
+    color: orange;
+}
+.slider i
+{
+    font-size:35px;
+    margin-right: 10px;
+}
+
+
+
+
+.slider a
+{
+    padding: 10px 50px; 
+    margin-right: 50px;
+    transition: all 0.3s ease-in;
+}
+.slider a:hover
+{
+    font-width: bold;
+    font-size: 110;
+}
+
+
+
+
+.slider a.btn-half
+{
+    background-color: deepskyblue;
+    color: white;
+}
+.slider a.btn-half:hover
+{
+    background-color: white;
+    color: deepskyblue;
+    opacity: 0.85;
+}
+.slider a.btn-full
+{
+    background-color: orange;
+    color: white;
+}
+.slider a.btn-full:hover 
+{
+    background-color: white;
+    color: orange;
+    opacity: 0.85;
+}
+
+
+
+
+
+.img2
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(..//Image/background2.jpg);
+    background-size: 100% 100%;
+}
+
+
+.img3
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(..//Image/background3.jpg);
+    background-size: 100% 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.intro-area
+{
+    position: relative;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+
+
+
+.sub-heading
+{
+    position: relative;
+    margin-bottom: 75px;
+    font-size: 20px;
+}
+.sub-heading:before
+{
+    content:"";
+    position:absolute;
+    top:100%;
+    left:50%;
+    margin-left:-3%;
+    width:6%;
+    height:4.5px;
+    background-color:deepskyblue;
+    z-index:1;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
+}
+.sub-heading:hover:before
+{
+    width:24%;
+    margin-left:-136px;
+}
+.sub-heading:after
+{
+    content:"";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left:-12%;
+    width:24%;
+    height:4.5px;
+    background-color: #e1e1e1;
+}
+.sub-heading p
+{
+    color:#818181;
+    display: inline-block;
+    padding:0px 0px 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+    
+}
+
+
+
+
+
+
+
+.intro-block
+{
+    position:relative;
+    background: #f7f7f7;
+    margin: 50px 0px 0px;
+    text-align: center;
+    padding: 70px 25px 40px;
+}
+.intro-block:hover, .intro-block.active
+{
+    background: #0AABE1;
+    
+}
+.intro-block:hover
+{
+    -webkit-transition: 0.8s ease;
+    -moz-transition: 0.8s ease;
+    -ms-transition: 0.8s ease;
+    -o-transition: 0.8s ease;
+    transition: 0.8s ease;
+}
+
+.intro-block .intro-icon
+{
+    position: absolute;
+    top:-31px;
+    left:50%;
+    margin-left: -31px;
+}
+.intro-block .fas
+{
+    width:63px;
+    height:63px;
+    font-size: 30px;
+    color: white;
+    line-height: 2;
+    background: deepskyblue;
+    border-radius: 100%;
+    box-shadow: 0px 0px 0px 10px #CCEEF9;
+}
+.intro-block:hover .fas, .intro-block.active .fas
+{
+    background:white;
+    color:deepskyblue;
+    box-shadow: 0px 0px 0px 10px deepskyblue;
+}
+
+
+
+
+.intro-block h3
+{
+    font-size: 18px;
+    color: deepskyblue;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.intro-block p
+{
+    color:#505050;
+}
+.intro-block:hover h3, .intro-block:hover p
+{
+    color:#f6f6f6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-me-text p 
+{
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.about-me
+{
+    text-align: center;
+}
+.about-me-text
+{
+    outline: 15px solid deepskyblue;
+    color:black;
+    font-size: 17.5px;
+    text-align: left;
+}
+.about-me .fas
+{
+    float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.help
+{
+    text-align: center;
+}
+.helpContent
+{
+    color:black;
+    font-size: 17.5px;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
